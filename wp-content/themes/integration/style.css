@@ -1,0 +1,475 @@
+/*
+Theme Name: Survival kit
+Theme URI: http://wordpress.org/
+Description: team 10
+Author: Lionel Quellery
+Author URI: http://wordpress.org/
+Version: 1.0
+Tags: black, brown, orange
+*/
+
+
+
+
+
+/** FONTS **/
+@font-face{
+	font-family: NeutrafaceText-book;
+	src: url(font/NeutrafaceText-Book.otf);
+}
+@font-face {
+    font-family: NeutrafaceText-light;
+    src: url(font/NeutrafaceText-Light.otf);
+     
+}
+
+@font-face {
+    font-family: BigJohn;
+    src: url(font/BigJohn.otf);
+}
+
+/****************************** 
+
+			HOME
+
+*******************************/
+
+/** GENERAL + HEADER **/
+
+body,html {
+	width: 100%;
+	height:100%;
+	background: #FFF;
+	margin: 0;
+}
+
+header img{
+	margin-top: 30px;
+	margin-left: 80px;
+	width: 100px;
+}
+
+header button{
+	background-color: #66219b;
+	width: 155px;
+	height: 30px;
+	border: none;
+	border-radius: 5px;
+	float: right;
+	margin-top: 30px;
+	margin-right: 80px;
+}
+
+header a{
+	text-decoration: none;
+	font-family: NeutrafaceText-Book;
+	font-size: 13px;
+	color: #FFF;
+}
+
+/** TEXT HOME **/
+
+.home{
+	width: 100%;
+	height: 190px;
+	background-color: #FFF;
+}
+
+.home span{
+	font-size: 23px;
+	font-family: NeutrafaceText-Light;
+	display: block;
+	padding-top: 65px;
+	text-align: center;
+}
+
+/** CONTENT HOME **/
+
+.choices{
+	height: 800px;
+	width: 100%;
+	list-style-type: none; 
+	margin: 0;
+	display: inline;
+}
+
+.enviro{
+	width: 20%;
+	height: 100%;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: -4px !important;
+	/*margin-left: -4px;*/
+}
+
+.enviro a{
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+}
+
+.overlay{
+	height:100%;
+	position:relative;
+	background:rgba(0,0,0,0.6);
+
+    opacity:1;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.overlay:hover{
+	z-index: -1;
+	opacity:1;
+
+	
+}
+
+.slogan{
+	font-family: NeutrafaceText-light;
+}
+
+.content{
+	height: 400px;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -1;
+/*	background-color: #000;
+	opacity: 0.6;*/
+	-webkit-filter: opacity(.8);
+  filter: opacity(.8);
+}
+
+
+.content p{
+	font-family: BigJohn;
+	font-size: 20px;
+	color: #a5a5a5;
+	padding-top: 200px;
+/*	top:calc(70% - 10px);*/
+	transition: all 0.3s; 
+}
+
+.content:hover p{
+	transform: translateY(-40px);
+	color:white;	
+	
+}
+
+.icon{
+	width: 0px;
+	transition: all 0.5s;
+}
+
+.content:hover .icon{
+	transform: translateY(-30px);
+	width: 90px;	
+}
+
+/****************************** 
+
+	  PRESENTATION SCREEN
+
+*******************************/
+
+/** Menu right side **/
+
+.menu{
+	float: right;
+	list-style-type: none;
+	width: 10%;
+}
+
+.menu a{
+	text-decoration: none;
+}
+
+.menu li{
+	color: #899d4e;
+	padding-bottom: 12px;
+	padding-left: 90px;
+}
+
+.menu img{
+	width: 8px;
+}
+
+.menu li p{
+	visibility: hidden;
+	font-family: NeutrafaceText-Light;
+	font-size: 12px;
+}
+
+.menu li:hover p{
+	visibility: visible;
+}
+
+/** Base **/
+
+.presentation{
+	width: 100%;
+	height: 660px;
+}
+
+/** LEFT PART **/
+
+.left-bloc{
+	width: 35%;
+	height: 100%;
+	float: left;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.left-bloc img{
+	margin-top: 30px;
+	margin-left: 80px;
+	width: 100px;
+}
+
+.left-bloc h2{
+	color: #d7d393;
+	padding-top: 180px;
+	padding-left: 80px;
+	font-family: NeutrafaceText-Light;
+	font-size: 30px;
+}
+
+.left-bloc h3{
+	color: #d7d393;
+	padding-left: 80px;
+	font-family: BigJohn;
+	font-size: 40px;
+}
+
+/** RIGHT PART **/
+
+.info-bloc{
+	width: 55%;
+	height: 100%;
+	float: left;
+	background-color: #FFFFFF;
+}
+
+.info-bloc h4{
+	color: #899d4e;
+	font-family: BigJohn;
+	font-size: 20px;
+	padding-left: 80px;
+	padding-top: 50px;
+}
+
+.info-bloc>p{
+	padding-top: 10px;
+	padding-left: 80px;
+	font-family: NeutrafaceText-Light;
+	font-size: 16px;
+	color: #000;
+}
+
+.info-bloc p span{
+	display: block;
+}
+
+.info-bloc h5{
+	color: #899d4e;
+	font-family: BigJohn;
+	font-size: 20px;
+	padding-left: 80px;
+	padding-top: 35px;
+}
+
+/** Presentation of the situations **/
+
+.intro-situations{
+	width: 100%;
+}
+
+.intro{
+	width: 40%;
+	float: left;
+	padding-left: 20px;
+}
+
+.intro a{
+	text-decoration: none;
+}
+
+.intro h6{
+	color: #899d4e;
+	font-family: NeutrafaceText-Light;
+	font-size: 20px;
+	padding-top: 25px;
+
+}
+
+.intro p{
+	padding-top: 10px;
+	font-family: NeutrafaceText-Light;
+	font-size: 14px;
+	color: #000;
+}
+
+.one{
+	padding-left: 80px;
+}
+
+.three{
+	padding-left: 80px;
+}
+
+/****************************** 
+
+	  SITUATIONS SCREENS
+
+*******************************/
+
+/** First situation **/
+
+.situation-one{
+	width: 100%;
+	height: 660px; 
+	position: relative;
+}
+
+.green{
+	width: 100%;
+	height: 660px; 
+	background-size: cover;
+	opacity: 0.1;
+	position: absolute;
+	z-index: 1;
+}
+
+.left-info{
+	width: 25%;
+	height: 100%;
+	float: left;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: inline-block;
+}
+
+.left-info img{
+	margin-top: 30px;
+	margin-left: 80px;
+	width: 100px;
+}
+
+.left-info>span{
+	display: block;
+	font-family: BigJohn;
+	font-size: 20px;
+	padding-left: 80px;
+	padding-top: 80px;
+	color: #899d4e;
+}
+
+.left-info>p{
+	font-family: NeutrafaceText-Light;
+	font-size: 15px;
+	padding-left: 80px;
+	padding-top: 40px;
+}
+
+.left-info p span{
+	display: block;
+}
+
+.needed{
+	width: 65%;
+	height: 100%;
+	float: left;
+	display: inline-block;
+}
+
+.needed>p{
+	font-family: BigJohn;
+	font-size: 45px;
+	color: #899d4e; 
+	text-align: center;
+	padding-top: 30px;
+}
+
+.content-slider{
+	height: 400px;
+	width: 750px;
+	background-color: #FFFFFF;
+	border: 2px solid #c2ccaa;
+	margin-top: 80px;
+	margin-left: 25px;
+	padding-top: 30px;
+	padding-left: 40px;
+}
+
+.content-slider>p{
+	font-family: NeutrafaceText-Light;
+	font-size: 14px;
+	color: #899d4e;
+}
+
+.content-slider>strong{
+	font-family: NeutrafaceText-Book;
+	font-size: 14px;
+}
+
+.slider{
+	height: 350px;
+	width: 700px;
+}
+
+.first-ingredient{
+	width: 150px;
+	height: 250px;
+	border: 1px solid #899d4e;
+	margin-top: 30px;
+}
+
+.first-ingredient img{
+	width: 140px;
+	height: 215px;
+	margin-left: 5px;
+}
+
+.separator{
+	width: 115px;
+	border-bottom: 1px solid #d7dfc4;
+	margin: auto;
+	margin-top: 5px;
+}
+
+.first-ingredient p{
+	font-family: NeutrafaceText-Light;
+	font-size: 14px;
+	color: #000000;
+	text-align: center;
+	margin-top: 5px;
+}
+
+.ingredient-one{
+	width: 150px;
+	height: 250px;
+}
+
+.ingredient-one>p{
+	font-family: NeutrafaceText-Book;
+	font-size: 16px;
+	color: #000000;
+	text-align: center;
+	margin-top: 5px;
+}
+
+/** Second situation **/
+.situation-two{
+	width: 100%;
+	height: 660px; 
+	background-color: green;
+}
+
+/** Third situation **/
+.situation-three{
+	width: 100%;
+	height: 660px; 
+	background-color: blue;
+}

@@ -1,0 +1,181 @@
+@font-face {
+  font-family: NeutrafaceText-book;
+  src: url(../font/NeutrafaceText-Book.otf); }
+@font-face {
+  font-family: NeutrafaceText-light;
+  src: url(../font/NeutrafaceText-Light.otf); }
+@font-face {
+  font-family: neutrafece demi; }
+@font-face {
+  font-family: BigJohn;
+  src: url(../font/BigJohn.otf); }
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial'; }
+
+/* MENU */
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333; }
+  .menu ul {
+    width: 960px;
+    margin: 0;
+    padding: 0;
+    margin: auto; }
+  .menu li {
+    list-style: none;
+    float: left;
+    width: 25%;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+    .menu li a {
+      text-decoration: none;
+      color: #ccc; }
+    .menu li .active {
+      color: #fff; }
+
+.logo {
+  position: absolute;
+  z-index: 100;
+  margin-top: 30px;
+  margin-left: 80px;
+  width: 100px; }
+
+/* PANEL */
+.panel {
+  min-height: 100%;
+  position: relative;
+  width: 100%; }
+
+#framecontent {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  /*Width of frame div*/
+  height: 100%;
+  overflow: hidden;
+  /*Disable scrollbars. Set to "scroll" to enable*/
+  background: navy;
+  color: white; }
+
+#panel-name-1 {
+  background-color: #eee; }
+  #panel-name-1 .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    #panel-name-1 .sidebar h1 {
+      color: white;
+      text-align: center; }
+    #panel-name-1 .sidebar .sidebar-template-title {
+      padding-top: 50%;
+      padding-right: 30%;
+      font-size: 30px; }
+      #panel-name-1 .sidebar .sidebar-template-title ::first-letter {
+        text-transform: uppercase; }
+      #panel-name-1 .sidebar .sidebar-template-title strong {
+        font-size: 50px;
+        font-family: BigJohn; }
+  #panel-name-1 .contain-right {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    width: 60%;
+    background-color: white;
+    height: 100%;
+    overflow-x: hidden;
+    margin: auto; }
+    #panel-name-1 .contain-right h1 {
+      color: black;
+      position: relative; }
+    #panel-name-1 .contain-right .template-top {
+      padding-left: 95px;
+      width: 70%; }
+      #panel-name-1 .contain-right .template-top .first-content {
+        top: 60px;
+        left: 120px;
+        position: relative;
+        width: 70%; }
+      #panel-name-1 .contain-right .template-top .title-template-right-top {
+        color: green;
+        padding-top: 15%;
+        font-family: BigJohn; }
+      #panel-name-1 .contain-right .template-top .title-template-right-top-1 {
+        color: green;
+        padding-top: 5%;
+        font-family: BigJohn; }
+  #panel-name-1 .contain-right .second-content {
+    top: 120px;
+    left: 120px;
+    position: relative;
+    width: 70%; }
+  #panel-name-1 .template-situation {
+    width: 400px; }
+
+#panel-name-2 {
+  background-color: #ccc; }
+  #panel-name-2 .title-template {
+    text-align: center;
+    color: green;
+    font-family: BigJohn;
+    padding-top: 5%;
+    font-size: 28px; }
+  #panel-name-2 .float-box {
+    float: left;
+    width: 300px;
+    padding-left: 40px;
+    padding-top: 10%;
+    text-align: justify; }
+  #panel-name-2 .title-template-1 {
+    font-family: NeutrafaceText-book;
+    color: green; }
+
+#panel-name-3 {
+  background-color: #ddd; }
+  #panel-name-3 .title-template {
+    text-align: center;
+    color: green;
+    font-family: BigJohn;
+    padding-top: 5%;
+    font-size: 28px; }
+  #panel-name-3 .float-box {
+    float: left;
+    width: 300px;
+    padding-left: 40px;
+    padding-top: 10%;
+    text-align: justify; }
+  #panel-name-3 .title-template-1 {
+    font-family: NeutrafaceText-book;
+    color: green; }
+
+#panel-name-4 {
+  background-color: #bbb; }
+  #panel-name-4 .title-template {
+    text-align: center;
+    color: green;
+    font-family: BigJohn;
+    padding-top: 5%;
+    font-size: 28px; }
+  #panel-name-4 .float-box {
+    float: left;
+    width: 300px;
+    padding-left: 60px;
+    padding-top: 10%;
+    text-align: justify; }
+  #panel-name-4 .title-template-1 {
+    font-family: NeutrafaceText-book;
+    color: green; }

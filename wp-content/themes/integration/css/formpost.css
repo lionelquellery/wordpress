@@ -1,0 +1,130 @@
+body, html {
+  padding: 0;
+  margin: 0;
+  background: #444;
+  height: 100%; }
+
+.split-container {
+  flex-direction: row;
+  display: flex;
+  height: 100%; }
+
+.split-item {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  rpadding: 3em 1em 1em; }
+  .split-item h3 {
+    text-align: center;
+    margin: 0 0 2em 0;
+    font-weight: 700; }
+  .split-item p {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 500px;
+    line-height: 1.5; }
+  .split-item a {
+    color: currentColor;
+    display: block;
+    text-align: center;
+    margin: 1em 0 0;
+    width: 100%; }
+
+.split-right {
+  order: -1;
+  color: #7b5a9e;
+  background: #fff; }
+
+.split-left {
+  background: #7b5a9e;
+  color: #fff; }
+  .split-left .form {
+    width: 82% !important;
+    margin: 0 auto;
+    padding: 1.5em 0; }
+  .split-left form p {
+    margin-bottom: 1.5em; }
+  .split-left *::-webkit-input-placeholder {
+    color: #ababab; }
+  .split-left *:-moz-placeholder {
+    /* Firefox 18- */
+    color: #ababab; }
+  .split-left *::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #ababab; }
+  .split-left *:-ms-input-placeholder {
+    /* IE10+ */
+    color: #ababab; }
+  .split-left input[type=text],
+  .split-left input[type=email],
+  .split-left input[type=url],
+  .split-left input[type=password],
+  .split-left textarea {
+    width: 90%;
+    line-height: 1.5em;
+    font-family: inherit;
+    border: none;
+    color: #121212;
+    background: #ededed;
+    overflow: auto;
+    resize: none;
+    padding-top: 0.75em;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 0.75em; }
+  .split-left input[type=text],
+  .split-left input[type=email],
+  .split-left input[type=url],
+  .split-left input[type=password] {
+    height: 1.5em; }
+  .split-left textarea {
+    height: 6em;
+    vertical-align: top; }
+  .split-left input[type=text]:focus,
+  .split-left input[type=email]:focus,
+  .split-left input[type=url]:focus,
+  .split-left input[type=password]:focus,
+  .split-left textarea:focus {
+    outline: 0;
+    border: none; }
+  .split-left input[type=submit] {
+    border: none;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-family: inherit;
+    line-height: 1.5em;
+    font-size: inherit;
+    cursor: pointer;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    color: #ababab;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    -webkit-transition: 1s;
+    transition: 1s; }
+  .split-left input[type=submit]:hover {
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    -webkit-transition: 1s;
+    transition: 1s;
+    color: #fff;
+    background: #000; }
+
+.split-image img {
+  border: 5px solid rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: auto;
+  margin: 2em auto;
+  border-radius: 50%;
+  max-width: 100px;
+  display: block; }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 0.5em;
+  font-family: Arial,sans-serif; }
